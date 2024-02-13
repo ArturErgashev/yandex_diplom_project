@@ -4,7 +4,6 @@ import data
 
 def test_get_order_success_response_code():
     response = sender_stand_request.create_new_order(data.order_body)
-    return response.json()["track"]
 
     track_number = response.json()["track"]
 
