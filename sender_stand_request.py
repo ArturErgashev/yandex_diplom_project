@@ -6,4 +6,4 @@ def create_new_order(body):
                          json=body)
 
 def get_order(track_number):
-    return requests.get(configuration.URL_SERVICE + configuration.GET_ORDER + track_number)
+    return requests.get(configuration.URL_SERVICE + configuration.GET_ORDER + str(track_number))
